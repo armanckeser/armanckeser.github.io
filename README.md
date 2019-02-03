@@ -1,10 +1,11 @@
 Ahmet Armanc Keser
 Personal Website for COMP20
 
-IMPLEMENTED
 *****************************************************
+IMPLEMENTED
 Currently nothing has been implemented.
 
-COLLABRATION
+
 *****************************************************
+COLLABRATION
 With no one yet
