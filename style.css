@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.45;
@@ -55,26 +55,64 @@ img {
   border-radius: 50%;
 }
 
+/* LINK CONTROL */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color:inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow:1px 1px 0px rgba(195, 195, 195, 0.97);
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 /* INDENTATION */
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 100%;
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 600px;
+  height: 300px;
   margin: auto;
 }
 
 .my_picture {
-  width: 200px;
-  float: left;
+  order: 1;
+  width: 40%;
+  margin: auto;
 }
 
 .links {
-  width: 200px;
-  float: right;
+  white-space: pre;
+  order: 2;
+  margin: auto;
 }
