@@ -58,6 +58,8 @@ img {
 /* LINK CONTROL */
 
 a:link {
+  outline: 0;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -67,7 +69,8 @@ a:visited {
 }
 
 a:hover {
-  text-shadow:1px 1px 0px rgba(195, 195, 195, 0.97);
+  /*text-shadow:1px 1px 0px rgba(195, 195, 195, 0.97); */
+  color: #666;
   text-decoration: none;
 }
 
@@ -88,7 +91,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -96,12 +98,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 600px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   margin: auto;
 }
 
@@ -115,4 +115,15 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   white-space: pre;
   order: 2;
   margin: auto;
+}
+
+@media all and (orientation:portrait) {
+  .container {
+    flex-flow: column;
+  }
+
+  .my_picture {
+    margin: auto;
+    margin-left: 33%;
+  }
 }
