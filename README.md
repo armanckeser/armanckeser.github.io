@@ -5,6 +5,7 @@ Personal Website for COMP20
 IMPLEMENTED
 The index.html page has been correctly implemented
 with the use of flexbox and a minimalist design
+resume page, including my resume and by biography page have been implemented.
 
 *****************************************************
 COLLABRATION
